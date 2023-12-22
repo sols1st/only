@@ -53,7 +53,7 @@ weight = 30
   github = "https://github.com/sols1st"
 ```
 
-## Installtion
+## Installation
 In the directory of project and run :
 ```bash
 git submodule add https://github.com/sols1st/only themes/only
