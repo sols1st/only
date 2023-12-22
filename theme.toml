@@ -1,0 +1,16 @@
+name = 'Only'
+license = 'MIT'
+licenselink = 'https://github.com/sols1st/only/LICENSE'
+description = 'simple'
+
+homepage = 'https://github.com/sols1st/only'
+
+demosite = 'https://sols1st.github.io/'
+
+tags = ['blog']
+features = ['simple']
+
+[author]
+  name = 'Solsist'
+  homepage = 'https://sols1st.github.io'
+

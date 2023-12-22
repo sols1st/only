@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  {{ if .IsHome }}
+  <div>
+    {{ partial "header.html" . }}
+  </div>
+  {{ end}}
+  <div style="display: flex;gap: 50px;margin-right: 50px;margin-top: 50px;">
+    <div style="min-width: 200px; border-right: 1px solid #000;">
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+  <div>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+
+</html>
