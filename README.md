@@ -12,7 +12,7 @@ Just a slight modification to the native theme.
 ![](./images/screenshot3.png)
 
 ## Configuration
-For hugo.toml 
+For `config.toml` or `hugo.toml`
 ```toml
 baseURL = ''
 languageCode = 'zh-CN'
@@ -51,4 +51,16 @@ weight = 30
 [params]
   bio = "知ってることだけ"
   github = "https://github.com/sols1st"
+```
+
+## Installtion
+In the directory of project and run :
+```bash
+git submodule add https://github.com/sols1st/only themes/only
+```
+
+In `config.toml` or `hugo.toml`
+
+```toml
+theme = "only"
 ```
