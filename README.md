@@ -48,9 +48,19 @@ weight = 30
   tag = "tags"
   category = "categories"
 
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    lineNoStart =1
+    lineNos = true
+    lineNumbersInTable = true
+    style = "abap"
+    tabWidth = 4
+
 [params]
   bio = "知ってることだけ"
-  github = "https://github.com/sols1st"
+  github = "sols1st"
+  email = "sols1st@outlook.com"
 ```
 
 ## Installation

@@ -18,10 +18,15 @@ Renders a menu for the given menu ID.
     </div>
     <div style="display: flex;">
       {{ with site.Params.github }}
-      <a href="{{ site.Params.github }}">
+      <a href="https://github.com/{{ site.Params.github }}">
         <img src="/github.svg" style="width: 20px;">
       </a>
       {{ end }}
+      {{ with site.Params.email }}
+      <a href="mailto:{{ site.Params.email }}">
+        <img src="/email.svg" style="width: 20px;">
+      </a>
+      {{end}}
     </div>
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
