@@ -16,7 +16,7 @@
     <div style="min-width: 200px; border-right: 1px solid #000;">
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
-    <main>
+    <main style="width: 100%;">
       {{ block "main" . }}{{ end }}
     </main>
   </div>

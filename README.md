@@ -49,6 +49,7 @@ weight = 30
   category = "categories"
 
 [markup]
+  table = true
   [markup.highlight]
     guessSyntax = true
     lineNoStart =1
