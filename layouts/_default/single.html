@@ -1,4 +1,18 @@
 {{ define "main" }}
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/contrib/auto-render.js" onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+            ],
+            throwOnError: false
+        });
+    });
+</script>
 
 <h1 style="margin-bottom: 0;">{{ .Title }}</h1>
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
